@@ -83,3 +83,10 @@ export function loadCart(fun) {
   xhr.open('GET', 'https://supersimplebackend.dev/cart');
   xhr.send();
 };
+
+export async function loadCartFetch() {
+  const promise = await fetch('https://supersimplebackend.dev/cart');
+  const response = await promise.text();
+  console.log(response);
+  return response;
+};
