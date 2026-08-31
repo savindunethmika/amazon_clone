@@ -1,17 +1,17 @@
-import { getProduct, loadProductsFetch } from "../data/products";
-import { orders } from "../data/orders";
-import dayjs from "https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js";
-import formatCurrency from "./utils/money";
+import {getProduct, loadProductsFetch} from '../data/products.js';
+import {orders} from '../data/orders.js';
+import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
+import formatCurrency from './utils/money.js';
 
-async function loadPage(){
+async function loadPage() {
   await loadProductsFetch();
 
-  let orderHTML = '';
+  let ordersHTML = '';
 
   orders.forEach((order) => {
     const orderTimeString = dayjs(order.orderTime).format('MMMM D');
 
-    orderHTML += `
+    ordersHTML += `
       <div class="order-container">
         <div class="order-header">
           <div class="order-header-left-section">
@@ -43,7 +43,7 @@ async function loadPage(){
 
     order.products.forEach((productDetails) => {
       const product = getProduct(productDetails.productId);
-    
+
       productsListHTML += `
         <div class="product-image-container">
           <img src="${product.image}">
@@ -55,8 +55,7 @@ async function loadPage(){
           </div>
           <div class="product-delivery-date">
             Arriving on: ${
-              dayjs(productDetails.estimatedDeliveryTime)
-                .format('MMMM D')
+              dayjs(productDetails.estimatedDeliveryTime).format('MMMM D')
             }
           </div>
           <div class="product-quantity">
@@ -81,7 +80,7 @@ async function loadPage(){
     return productsListHTML;
   }
 
-  document.querySelector('.js-orders-grid').innerHTML = orderHTML;
+  document.querySelector('.js-orders-grid').innerHTML = ordersHTML;
 };
 
 loadPage();
