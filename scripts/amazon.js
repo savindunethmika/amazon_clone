@@ -64,7 +64,9 @@ function renderProductsGrid() {
           </select>
         </div>
 
-        ${product.extraInfoHTML()}
+        <div class="product-extra-info">
+          ${product.extraInfoHTML()}
+        </div>
 
         <div class="product-spacer"></div>
 

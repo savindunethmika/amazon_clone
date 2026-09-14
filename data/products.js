@@ -52,7 +52,11 @@ class Clothing extends Product {
 
   extraInfoHTML() {
     return `
-      <a href="${this.sizeChartLink}" target="_blank">Size Chart</a>
+      <a href="${this.sizeChartLink}" target="_blank">
+        <button class="extra-info-button button-primary">
+          Size Chart
+        </button>
+      </a>
     `;
   }
 };
@@ -69,8 +73,16 @@ export class Appliance extends Product {
 
   extraInfoHTML() {
     return `
-      <a href="${this.instructionsLink}" target="_blank">Instructions</a>    
-      <a href="${this.warrantyLink}" target="_blank">Warranty</a>    
+      <a href="${this.instructionsLink}" target="_blank">
+        <button class="extra-info-button button-primary">
+          Instructions
+        </button>
+      </a>    
+      <a href="${this.warrantyLink}" target="_blank">
+        <button class="extra-info-button button-primary">
+          Warranty
+        </button>
+      </a>    
     `;
   }
 };

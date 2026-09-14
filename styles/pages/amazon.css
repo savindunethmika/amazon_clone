@@ -158,3 +158,13 @@
   padding: 8px;
   border-radius: 50px;
 }
+
+.extra-info-button {
+  border-radius: 50px;
+  padding: 5px;
+  width: 50%;
+}
+
+.extra-info-button :hover{
+  background-color: transparent;
+}
