@@ -59,7 +59,7 @@ A modern web browser. A local server (e.g. the VS Code "Live Server" extension) 
 
 | Page | Description |
 |---|---|
-| `amazon.html` | Home page — product grid, search, add to cart |
+| `index.html` | Home page — product grid, search, add to cart |
 | `checkout.html` | Cart review, delivery options, order placement |
 | `orders.html` | Order history |
 | `tracking.html` | Order tracking status |
@@ -71,7 +71,7 @@ A modern web browser. A local server (e.g. the VS Code "Live Server" extension) 
 ```
 Amazon_Clone/
 │
-├── amazon.html            # Home page — product grid, search bar, cart icon
+├── index.html            # Home page — product grid, search bar, cart icon
 ├── checkout.html          # Cart review, delivery options, order placement
 ├── orders.html            # Order history page
 ├── tracking.html          # Order tracking page
