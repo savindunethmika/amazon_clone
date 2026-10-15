@@ -36,7 +36,7 @@ A modern web browser. A local server (e.g. the VS Code "Live Server" extension) 
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/DevilSavi/amazon_clone.git
+    git clone https://github.com/savindunethmika/amazon_clone.git
     ```
 
 2. **Navigate to the project directory:**
@@ -45,7 +45,7 @@ A modern web browser. A local server (e.g. the VS Code "Live Server" extension) 
     ```
 
 3. **Run the app:**
-    Open `amazon.html` with Live Server (or your browser).
+    Open `index.html` with Live Server (or your browser).
 
 4. **Backend:**
     Product data is served from `https://supersimplebackend.dev`, or you can run your own local backend using `backend/products.json`:
