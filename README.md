@@ -25,6 +25,8 @@
 
 >   ![Project Preview](images/preview.gif)
 
+[![Live Demo](https://img.shields.io/badge/LiveDemo-0F172A?style=for-the-badge&logo=googlechrome&logoColor=38BDF8)](https://amazonclonebysavindu.netlify.app/)
+
 ---
 
 ## 🛠️ Installation & Setup
